@@ -90,8 +90,8 @@ The Multimodal RAG Workbench is a full-stack application designed for educationa
 ### System Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    Frontend (React + Vite)                  │
+┌────────────────────────────────────────────────────────────┐
+│                   Frontend (React + Vite)                  │
 │  ┌─────────────────────────────────────────────────────┐   │
 │  │  Components: MessageBubble, InputBar, References    │   │
 │  │  State: Messages, Streaming, Multimodal Content     │   │
@@ -101,10 +101,10 @@ The Multimodal RAG Workbench is a full-stack application designed for educationa
                           │ HTTP/SSE
                           │ localhost:5173 → localhost:8000
 ┌─────────────────────────▼──────────────────────────────────┐
-│                   Backend (FastAPI)                         │
+│                   Backend (FastAPI)                        │
 │  ┌─────────────────────────────────────────────────────┐   │
 │  │  Endpoints: /api/chat/stream, /api/pdf/process      │   │
-│  │  Processors: pdf_processor, audio_processor          │   │
+│  │  Processors: pdf_processor, audio_processor         │   │
 │  │  AI: LangChain + OpenAI (GPT-4O, Whisper)           │   │
 │  └──────────────────────┬──────────────────────────────┘   │
 └─────────────────────────┼──────────────────────────────────┘
@@ -352,14 +352,14 @@ ocr_rag/
 │   ├── main.tsx               # Application entry point
 │   ├── components/            # React components
 │   │   ├── ui/                # shadcn/ui component library (50+)
-│   │   ├── 导航栏.tsx          # Navigation bar
-│   │   ├── 侧边栏.tsx          # Sidebar (conversations)
-│   │   ├── 顶部栏.tsx          # Top bar (model selector)
-│   │   ├── 消息气泡.tsx        # Message bubble (multimodal)
-│   │   ├── 输入栏.tsx          # Input bar with file upload
-│   │   ├── 引用抽屉.tsx        # Reference drawer
-│   │   ├── 顶部进度条.tsx      # PDF progress bar
-│   │   └── 日志抽屉.tsx        # Log viewer drawer
+│   │   ├── NavigationBar.tsx  # Navigation bar
+│   │   ├── Sidebar.tsx        # Sidebar (conversations)
+│   │   ├── TopBar.tsx         # Top bar (model selector)
+│   │   ├── MessageBubble.tsx  # Message bubble (multimodal)
+│   │   ├── InputBar.tsx       # Input bar with file upload
+│   │   ├── ReferenceDrawer.tsx # Reference drawer
+│   │   ├── TopProgressBar.tsx  # PDF progress bar
+│   │   └── LogDrawer.tsx       # Log viewer drawer
 │   ├── api/
 │   │   └── chat.ts            # API client with SSE support
 │   └── lib/
@@ -429,10 +429,10 @@ python test_client.py  # Tests streaming chat endpoint
 
 ### Code Organization Notes
 
-- **Chinese Component Names**: Several React components use Chinese names (e.g., `导航栏.tsx`, `消息气泡.tsx`). This is intentional - preserve these names when contributing.
 - **TypeScript Strict Mode**: Enabled for type safety
 - **Path Alias**: `@` maps to `./src` directory
 - **Component Library**: Uses shadcn/ui (50+ Radix UI components)
+- **Component Naming**: React components use descriptive English names (e.g., `NavigationBar.tsx`, `MessageBubble.tsx`)
 
 ---
 
@@ -571,7 +571,7 @@ Contributions are welcome! This project serves as an educational tool, research 
 ### Development Guidelines
 
 - Follow existing code style and structure
-- Preserve Chinese component names (intentional design choice)
+- Use descriptive English names for all components and files
 - Add comments for complex logic
 - Update documentation for new features
 - Test with multiple file types (PDFs, images, audio)
