@@ -15,6 +15,8 @@
 
 ## Overview
 
+![Multimodal RAG Workbench UI](multi_rag_ocr_ui.png)
+
 The Multimodal RAG Workbench is a full-stack application designed for educational demonstrations, research experiments, and production-ready deployments. It leverages cutting-edge AI models from OpenAI (GPT-4O, GPT-5, Whisper) with LangChain 1.0 to provide:
 
 - **Multimodal Understanding**: Process and understand PDFs, images, audio, and video files
@@ -637,17 +639,6 @@ This project uses numerous open-source libraries. See `backend/requirements.txt`
 - OCR processing for PDFs
 - Audio transcription
 - Dark mode UI
-
-### Planned Features 🚀
-- [ ] Vector database integration (FAISS/Chroma)
-- [ ] Persistent conversation storage
-- [ ] Docker deployment support
-- [ ] Additional model providers (Claude, Gemini)
-- [ ] User authentication
-- [ ] Collaborative conversations
-- [ ] Export conversations (PDF, Markdown)
-- [ ] Advanced RAG techniques (HyDE, Self-RAG)
-- [ ] Mobile responsive improvements
 
 ---
 
