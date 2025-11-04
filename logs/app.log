@@ -1,0 +1,12 @@
+2025-11-03 16:00:08.467 | INFO     | backend.main:<module>:88 - ✅ 音频处理器初始化成功
+2025-11-03 16:04:11.789 | INFO     | backend.main:<module>:88 - ✅ 音频处理器初始化成功
+2025-11-03 16:04:16.319 | INFO     | backend.main:<module>:88 - ✅ 音频处理器初始化成功
+2025-11-03 16:04:16.324 | INFO     | backend.main:startup_event:97 - 🚀 正在启动服务...
+2025-11-03 16:04:16.324 | ERROR    | backend.main:startup_event:101 - ❌ OPENAI_API_KEY 未设置！
+2025-11-03 16:04:16.324 | ERROR    | backend.main:startup_event:102 - 请在环境变量或 .env 文件中设置 OPENAI_API_KEY
+2025-11-04 14:59:24.883 | INFO     | __main__:chat_stream:190 - Received chat request: what's your main function...
+2025-11-04 14:59:25.519 | ERROR    | __main__:get_chat_model:85 - Model initialization failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-11-04 14:59:25.519 | ERROR    | __main__:generate_streaming_response:168 - Streaming response generation failed: 500: Model initialization failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-11-04 15:11:07.509 | INFO     | __main__:chat_stream:190 - Received chat request: make a self-introduction...
+2025-11-04 15:11:07.514 | ERROR    | __main__:get_chat_model:85 - Model initialization failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-11-04 15:11:07.514 | ERROR    | __main__:generate_streaming_response:168 - Streaming response generation failed: 500: Model initialization failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
