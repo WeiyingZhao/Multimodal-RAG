@@ -111,7 +111,7 @@ The Multimodal RAG Workbench is a full-stack application designed for educationa
                           │
             ┌─────────────┼─────────────┐
             │             │             │
-    ┌───────▼───────┐ ┌──▼────────┐ ┌─▼──────────┐
+    ┌───────▼───────┐ ┌───▼───────┐ ┌───▼────────┐
     │ OpenAI API    │ │ Tesseract │ │ FFmpeg     │
     │ (GPT/Whisper) │ │ (OCR)     │ │ (Audio)    │
     └───────────────┘ └───────────┘ └────────────┘
